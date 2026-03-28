@@ -357,3 +357,83 @@ footer {
   border-radius: 12px;
   border: 1px solid #9b30ff;
 }
+
+/* ── RESPONSIVE (celular) ── */
+@media (max-width: 768px) {
+
+  /* HEADER */
+  nav {
+    padding: 16px 20px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav ul {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* HERO */
+  #inicio {
+    padding: 140px 20px 60px;
+  }
+
+  #inicio h1 {
+    font-size: 36px;
+  }
+
+  .subtitulo {
+    font-size: 16px;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* SECCIONES */
+  section {
+    padding: 60px 20px;
+  }
+
+  section h2 {
+    font-size: 28px;
+  }
+
+  /* TECNOLOGÍAS */
+  .tech-grid {
+    gap: 12px;
+  }
+
+  .tech-card {
+    padding: 20px 24px;
+  }
+
+  /* PROYECTOS */
+  .proyectos-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .proyecto-card {
+    max-width: 100%;
+  }
+
+  /* CONTACTO */
+  .contacto-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacto-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
