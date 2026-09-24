@@ -1,0 +1,397 @@
+:root {
+  --fondo: #111113;
+  --fondo-2: #19191c;
+  --borde: #2a2a2f;
+  --texto: #e8e6e3;
+  --muted: #8a8791;
+  --acento: #b69cff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--texto);
+  text-decoration: none;
+}
+
+p + p {
+  margin-top: 12px;
+}
+
+::selection {
+  background: var(--acento);
+  color: var(--fondo);
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.resaltado {
+  color: var(--acento);
+}
+
+/* ---------- nav ---------- */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(17, 17, 19, 0.92);
+  border-bottom: 1px solid var(--borde);
+  z-index: 10;
+}
+
+.nav-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+}
+
+.logo span {
+  color: var(--acento);
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  font-size: 15px;
+  color: var(--muted);
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--acento);
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: 1px solid var(--borde);
+  color: var(--texto);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ---------- secciones ---------- */
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 90px 0;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+h2 .mono {
+  color: var(--acento);
+  font-weight: 400;
+  margin-right: 4px;
+}
+
+/* ---------- hero ---------- */
+
+.hero {
+  padding-top: 170px;
+  padding-bottom: 60px;
+}
+
+.hero h1 {
+  font-size: clamp(34px, 6vw, 52px);
+  line-height: 1.15;
+  margin: 8px 0 24px;
+  max-width: 14ch;
+}
+
+.hero p {
+  max-width: 58ch;
+  color: #c4c1c9;
+}
+
+.foto {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 2px solid var(--borde);
+}
+
+.botones {
+  display: flex;
+  gap: 12px;
+  margin-top: 36px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--acento);
+  color: var(--fondo);
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid var(--acento);
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn-borde {
+  background: none;
+  color: var(--acento);
+}
+
+/* ---------- proyectos ---------- */
+
+.proyectos {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.proyecto {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 24px;
+  padding: 20px;
+  background: var(--fondo-2);
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  transition: border-color 0.25s, transform 0.25s;
+}
+
+.proyecto:hover {
+  border-color: var(--acento);
+  transform: translateY(-2px);
+}
+
+.captura,
+.proyecto img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.captura {
+  background: #222227;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+}
+
+.proyecto h3 {
+  font-size: 19px;
+  margin-bottom: 6px;
+}
+
+.proyecto p {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.tags li {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--acento);
+  background: rgba(182, 156, 255, 0.08);
+  padding: 3px 9px;
+  border-radius: 4px;
+}
+
+.links {
+  display: flex;
+  gap: 18px;
+  margin-top: 16px;
+  font-size: 15px;
+}
+
+.links a,
+.redes a {
+  border-bottom: 1px solid var(--acento);
+  padding-bottom: 1px;
+  transition: color 0.2s;
+}
+
+.links a:hover,
+.redes a:hover {
+  color: var(--acento);
+}
+
+/* ---------- habilidades ---------- */
+
+.habilidades {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.habilidades h3 {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.habilidades .tags {
+  margin-top: 10px;
+}
+
+/* ---------- contacto ---------- */
+
+#contacto p {
+  color: var(--muted);
+  max-width: 50ch;
+  margin-top: 12px;
+}
+
+.correo {
+  display: inline-block;
+  margin-top: 28px;
+  font-size: clamp(20px, 4vw, 28px);
+  font-weight: 500;
+  color: var(--acento);
+  word-break: break-all;
+}
+
+.correo:hover {
+  text-decoration: underline;
+}
+
+.redes {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+/* ---------- footer ---------- */
+
+footer {
+  border-top: 1px solid var(--borde);
+  padding: 28px 20px;
+  text-align: center;
+  color: var(--muted);
+}
+
+/* ---------- animación al hacer scroll ---------- */
+
+.aparecer {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.aparecer.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---------- celular ---------- */
+
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: var(--fondo);
+    border-bottom: 1px solid var(--borde);
+  }
+
+  .nav-links.abierto {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 14px 20px;
+  }
+
+  .hero {
+    padding-top: 130px;
+  }
+
+  section {
+    padding: 64px 0;
+  }
+
+  .proyecto {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .habilidades {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

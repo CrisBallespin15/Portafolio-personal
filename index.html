@@ -3,139 +3,188 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cristian Ballespín | Dev Web</title>
-  <link rel="stylesheet" href="styles.css">
-  <meta name="google-translate-customization" content="your-customization-id">
+  <title>Cristian.dev · Portafolio</title>
+  <meta name="description" content="Portafolio de Cristian Ballespin, desarrollador frontend de Tucumán, Argentina.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- traductor de google -->
-    <div id="google_translate_element"></div>
 
-<script type="text/javascript">
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement(
-      {pageLanguage: 'es', includedLanguages: 'en,es'},
-      'google_translate_element'
-    );
-  }
-</script>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#inicio" class="logo">cristian<span>.</span>dev</a>
 
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false">menú</button>
 
-  <!-- HEADER -->
-  <header>
-    <nav>
-      <a href="#inicio" class="logo">Cristian<span>.dev</span></a>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#tecnologias">Tecnologías</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+      <nav class="nav-links">
+        <a href="#proyectos">proyectos</a>
+        <a href="#habilidades">habilidades</a>
+        <a href="#contacto">contacto</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- HERO -->
-  <section id="inicio">
-    <div class="hero-content">
-      <p class="saludo">👋 Hola, soy</p>
-      <h1>Cristian <span>Ballespín</span></h1>
-      <p class="subtitulo">Desarrollador Web Frontend apasionado por crear experiencias digitales increíbles con HTML, CSS y JavaScript.</p>
-      <div class="hero-btns">
-        <a href="#proyectos" class="btn-primary">Ver mis proyectos</a>
-        <a href="#contacto" class="btn-secondary">Contactame</a>
-      </div>
-    </div>
-  </section>
+  <main>
 
-  <!-- SOBRE MÍ -->
-  <section id="sobre-mi">
-    <h2>Sobre <span>mí</span></h2>
-    <div class="sobre-mi-content">
-      <p>Soy Cristian Ballespín, un desarrollador web apasionado por crear experiencias digitales increíbles.</p>
-      <p>Tengo experiencia en el desarrollo de aplicaciones web utilizando tecnologías como HTML, CSS y JavaScript.</p>
-      <p>Soy estudiante de la Universidad Tecnológica de Tucumán, llevo 2 años programando y me encanta aprender y mejorar mis habilidades.</p>
-      <p>Mi objetivo es seguir creciendo como desarrollador y contribuir a proyectos innovadores que tengan un impacto positivo en la sociedad.</p>
-    </div>
-  </section>
+    <!-- Sobre mí -->
+    <section id="inicio" class="hero">
+      <!-- Si tenés foto, ponela en img/foto.jpg y sacá el comentario:
+      <img src="img/foto.jpg" alt="Foto de Cristian" class="foto"> -->
 
-  <!-- TECNOLOGÍAS -->
-  <section id="tecnologias">
-    <h2>Mis <span>tecnologías</span></h2>
-    <div class="tech-grid">
-      <div class="tech-card">
-        <span class="tech-icon">🌐</span>
-        <p>HTML5</p>
-      </div>
-      <div class="tech-card">
-        <span class="tech-icon">🎨</span>
-        <p>CSS3</p>
-      </div>
-      <div class="tech-card">
-        <span class="tech-icon">⚡</span>
-        <p>JavaScript</p>
-      </div>
-      <div class="tech-card">
-        <span class="tech-icon">🐙</span>
-        <p>GitHub</p>
-      </div>
-      <div class="tech-card">
-        <span class="tech-icon">🔧</span>
-        <p>Git</p>
-      </div>
-    </div>
-  </section>
+      <p class="mono muted">hola, qué tal</p>
+      <h1>Soy Cristian Ballespin, hago páginas web.</h1>
 
-  <!-- PROYECTOS -->
-  <section id="proyectos">
-    <h2>Mis <span>proyectos</span></h2>
-    <div class="proyectos-grid">
-      <div class="proyecto-card">
-        <div class="card-header">
-          <span>🧑‍💻</span>
-          <h3>Portafolio Personal</h3>
-        </div>
-        <p>Sitio web personal que muestra mis habilidades, proyectos y experiencia como desarrollador web.</p>
-        <div class="card-tags">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span>
-        </div>
-        <a href="https://github.com/CrisBallespin15/CrisBallespin15" target="_blank">Ver proyecto →</a>
-      </div>
-      <div class="proyecto-card">
-        <div class="card-header">
-          <span>🛍️</span>
-          <h3>Infinit Indumentaria</h3>
-        </div>
-        <p>Tienda online de ropa masculina con catálogo de productos, control de stock y sistema de carrito de compras.</p>
-        <div class="card-tags">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span>
-        </div>
-        <a href="https://infinit-indumentaria.netlify.app/" target="_blank">Ver proyecto →</a>
-      </div>
-    </div>
-  </section>
+      <p>
+        Tengo 22 años y vivo en San Miguel de Tucumán, Argentina. Empecé a programar en 2022 haciendo
+        páginas para mí y desde entonces no paré. Me gusta que las cosas se vean
+        bien pero sobre todo que funcionen.
+      </p>
+      <p>
+        Ahora mismo estoy aprendiendo <span class="resaltado">React</span>
+        y buscando mi primer trabajo como desarrollador.
+      </p>
 
-  <!-- CONTACTO -->
-  <section id="contacto">
-    <h2>Hablemos <span>👋</span></h2>
-    <p class="contacto-sub">¿Tenés un proyecto en mente? ¡Me encantaría ser parte de él!</p>
-    <div class="contacto-links">
-      <a href="mailto:ballespincristian11@gmail.com" class="contacto-btn">
-        📧 Enviarme un email
-      </a>
-      <a href="https://github.com/CrisBallespin15" target="_blank" class="contacto-btn">
-        🐙 Ver mi GitHub
-      </a>
-      <a href="https://wa.me/543816045734" target="_blank" class="contacto-btn">
-  💬 Escribime por WhatsApp
-</a>
-    </div>
-  </section>
+      <div class="botones">
+        <a href="#proyectos" class="btn">Ver proyectos</a>
+        <a href="#contacto" class="btn btn-borde">Contacto</a>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="aparecer">
+      <h2><span class="mono">01.</span> Proyectos</h2>
+      <p class="muted">Algunas cosas que hice. El código de todo está en mi GitHub.</p>
+
+      <div class="proyectos">
+
+        <article class="proyecto">
+          <img src="img/bazar.png" alt="Captura de la tienda del bazar">
+          <div class="proyecto-info">
+            <h3>Bazar La Esquina</h3>
+            <p>Tienda online para un bazar de barrio con más de 150 productos. Tiene buscador, filtros por categoría, paginación y un carrito que manda el pedido armado por WhatsApp.</p>
+            <ul class="tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>localStorage</li>
+            </ul>
+            <div class="links">
+              <a href="https://github.com/CrisBallespin15/bazar" target="_blank">código</a>
+              <a href="../bazar/index.html" target="_blank">demo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proyecto">
+          <img src="img/stock.png" alt="Captura del control de stock">
+          <div class="proyecto-info">
+            <h3>Control de stock</h3>
+            <p>Inventario para un negocio chico. Carga entradas y salidas, avisa qué productos hay que reponer, guarda el historial de movimientos y exporta todo a CSV.</p>
+            <ul class="tags">
+              <li>JavaScript</li>
+              <li>&lt;dialog&gt;</li>
+              <li>CSV</li>
+            </ul>
+            <div class="links">
+              <a href="https://github.com/CrisBallespin15/control-stock" target="_blank">código</a>
+              <a href="../control-stock/index.html" target="_blank">demo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proyecto">
+          <img src="img/gastos.png" alt="Captura de la app de gastos">
+          <div class="proyecto-info">
+            <h3>Mis gastos</h3>
+            <p>App para anotar ingresos y gastos del mes. La hice porque las apps de finanzas que probé tenían demasiadas cosas y yo solo quería ver en qué se me va la plata.</p>
+            <ul class="tags">
+              <li>JavaScript</li>
+              <li>localStorage</li>
+              <li>CSS Grid</li>
+            </ul>
+            <div class="links">
+              <a href="https://github.com/CrisBallespin15/control-gastos" target="_blank">código</a>
+              <a href="../control-gastos/index.html" target="_blank">demo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proyecto">
+          <img src="img/infinit.jpg" alt="Captura de la tienda Infinit Indumentaria">
+          <div class="proyecto-info">
+            <h3>Infinit Indumentaria</h3>
+            <p>Tienda online de ropa urbana para hombre. Catálogo con carrito, favoritos, modo claro/oscuro y contacto directo por WhatsApp.</p>
+            <ul class="tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="links">
+              <a href="https://github.com/CrisBallespin15/infinit-indumentaria" target="_blank">código</a>
+              <a href="https://infinit-indumentaria.netlify.app/" target="_blank">demo ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="aparecer">
+      <h2><span class="mono">02.</span> Habilidades</h2>
+
+      <div class="habilidades">
+        <div>
+          <h3>Lenguajes</h3>
+          <ul class="tags">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Herramientas</h3>
+          <ul class="tags">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>VS Code</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Aprendiendo</h3>
+          <ul class="tags">
+            <li>React</li>
+            <li>TypeScript</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="aparecer">
+      <h2><span class="mono">03.</span> Contacto</h2>
+      <p>
+        Si tenés un proyecto, una oferta o solo querés hablar, escribime.
+        Normalmente contesto rápido.
+      </p>
+
+      <a href="mailto:ballespincristian11@gmail.com" class="correo">ballespincristian11@gmail.com</a>
+
+      <ul class="redes">
+        <li><a href="https://github.com/CrisBallespin15" target="_blank">GitHub</a></li>
+      </ul>
+    </section>
+
+  </main>
 
   <footer>
-    <p>Hecho por Cristian Ballespín &copy; 2026</p>
+    <p class="mono">© <span id="year"></span> Cristian Ballespin · hecho a mano con HTML y CSS</p>
   </footer>
 
+  <script src="js/main.js"></script>
 </body>
 </html>
